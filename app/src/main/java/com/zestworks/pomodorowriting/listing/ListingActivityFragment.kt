@@ -21,7 +21,7 @@ class ListingActivityFragment : Fragment() {
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        fab.setOnClickListener({
+        fab_add.setOnClickListener({
             val transaction = fragmentManager.beginTransaction()
             transaction.replace(R.id.parent, SetupFragment(), "SETUP")
             transaction.addToBackStack(null)
