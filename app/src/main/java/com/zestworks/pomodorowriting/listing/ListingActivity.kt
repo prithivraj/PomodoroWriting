@@ -15,7 +15,7 @@ class ListingActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.add(R.id.parent, ListingActivityFragment(), "SETUP")
+        transaction.add(R.id.parent, ListingActivityFragment(), "LISTING")
         transaction.commit()
     }
 
